@@ -3,7 +3,7 @@ pipeline {
   environment {
     DOCKERHUB_USER = "koge022"
     BUILD_HOST = "root@192.168.0.5"
-    PROD_HOST = "root@192.168.0.3"
+    PROD_HOST = "root@192.168.0.4"
     BUILD_TIMESTAMP = sh(script: "date +%Y%m%d-%H%M%S", returnStdout: true).trim()
   }
   stages {
